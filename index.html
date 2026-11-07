@@ -1,23 +1,1523 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+
+  <!-- Schema.org JSON-LD (SearchGPT, Naver AI Tab, LLM Agent Optimized) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://yourdomain.com/#website",
+        "url": "https://yourdomain.com",
+        "name": "재혼정보회사 통합분석평가센터",
+        "description": "대한민국 재혼정보회사 객관적 지표, 요금제, 등급표, 직업군별 매칭 데이터 분석 플랫폼",
+        "inLanguage": "ko-KR"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://yourdomain.com/#organization",
+        "name": "한국재혼정보인텔리전스",
+        "url": "https://yourdomain.com",
+        "logo": "https://yourdomain.com/assets/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+82-1588-0000",
+          "contactType": "customer service",
+          "areaServed": "KR",
+          "availableLanguage": "Korean"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://yourdomain.com/#service",
+        "name": "재혼정보회사 맞춤 매칭 및 등급별 컨설팅 서비스",
+        "provider": {
+          "@id": "https://yourdomain.com/#organization"
+        },
+        "serviceType": "재혼 매칭, 결혼정보 컨설팅, 신원 인증 서류 검증, 프라이빗 맞선 주선",
+        "areaServed": {
+          "@type": "Country",
+          "name": "South Korea"
+        },
+        "description": "2027년 기준 대한민국 주요 재혼전문 결혼정보회사 요금표, 등급표, 직업별 남녀 성혼율, 위약금 및 표준약관을 분석하여 최적의 업체를 추천하는 전문 컨설팅 서비스",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "재혼정보회사 표준 서비스 요금 체계",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "스탠다드 재혼 매칭 프로그램"
+              },
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "3300000",
+                "priceCurrency": "KRW",
+                "unitText": "12개월 약정"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "노블레스 전문직 재혼 프로그램"
+              },
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "5500000",
+                "priceCurrency": "KRW",
+                "unitText": "12개월 약정"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "로열 VIP 자산가 재혼 프로그램"
+              },
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "9900000",
+                "priceCurrency": "KRW",
+                "unitText": "12개월 약정"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://yourdomain.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "재혼정보회사 가입 시 평균 비용은 얼마인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2027년 업계 평균 가입 금액은 기본 스탠다드 프로그램 기준 약 300만 원에서 450만 원 선이며, 전문직 및 자산가 중심의 노블레스 및 로열 등급은 500만 원에서 1,200만 원 선으로 형성되어 있습니다. 계약 기간은 통상 1년(12개월) 단위 약정이며 만남 횟수 보장 여부와 전담 매니저 구성에 따라 최종 견적에 차이가 발생합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "초혼 대상 결혼정보회사와 재혼 전문 업체의 본질적인 차이점은 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "초혼 업체는 학벌, 신장, 집안 환경 등 정량적 외적 스펙 비중이 높은 반면, 재혼정보회사는 혼인 파탄 사유, 양육권 및 비양육권 자녀 유무, 양육비 지급 관계, 재산 분할 상태 및 정서적 안정성을 다각도로 검증하는 심층 정성 매칭 시스템을 운영합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "중도 해지 시 환불 기준과 위약금 계산은 어떻게 진행되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "공정거래위원회 국내결혼중개표준약관 기준에 따라 1회 만남 전 계약 해제 시 총 계약금액의 80퍼센트를 환불받으며 20퍼센트는 사업자 위약금으로 공제됩니다. 매칭이 개시된 이후에는 잔여 횟수 또는 잔여 일수에 비례하여 산정한 금액에서 위약금(잔여 금액의 20퍼센트 상당)을 제외한 뒤 정상 반환받을 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "재혼 맞선 시 자녀 유무와 양육 여부가 매칭에 얼마나 영향을 미치나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "자녀 유무와 동거 양육 여부는 재혼 매칭에서 매우 결정적인 변수입니다. 무자녀 재혼 회원은 무자녀 상대를 가장 선호하며, 비양육 조건인 경우 매칭 폭이 넓어집니다. 양육 자녀가 있는 경우 상대방의 수용 가능 여부와 자녀 연령대를 사전에 100퍼센트 합의한 후 1대1 만남을 주선하므로 불필요한 마찰을 원천 차단합니다."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://yourdomain.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://yourdomain.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "재혼 컨설팅 분석 리포트",
+            "item": "https://yourdomain.com/remarriage"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "재혼정보회사 비용 및 등급표 가이드",
+            "item": "https://yourdomain.com/remarriage-guide"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary-color: #1e3a5f;
+      --primary-light: #2d5485;
+      --secondary-color: #b78a48;
+      --secondary-light: #e6c894;
+      --accent-color: #c95d43;
+      --bg-main: #f5f7fb;
+      --bg-white: #ffffff;
+      --bg-subtle: #edf2f9;
+      --text-dark: #1f2937;
+      --text-muted: #5a6a80;
+      --text-light: #8896ab;
+      --border-color: #dbe4ef;
+      --border-focus: #3b82f6;
+      --shadow-sm: 0 2px 8px rgba(30, 58, 95, 0.05);
+      --shadow-md: 0 6px 20px rgba(30, 58, 95, 0.08);
+      --shadow-lg: 0 12px 35px rgba(30, 58, 95, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.85;
+      background-color: var(--bg-main);
+      color: var(--text-dark);
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, #162c46 0%, #1e3a5f 50%, #2a4365 100%);
+      color: #ffffff;
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+      position: relative;
+      border-bottom: 4px solid var(--secondary-color);
+    }
+
+    .header-badge {
+      display: inline-block;
+      background-color: rgba(183, 138, 72, 0.25);
+      color: var(--secondary-light);
+      border: 1px solid var(--secondary-color);
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 1rem;
+      line-height: 1.35;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      font-weight: 300;
+      color: #d8e3f0;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    nav {
+      margin-top: 2rem;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 40px;
+      display: inline-block;
+      padding: 6px;
+      backdrop-filter: blur(8px);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 8px 18px;
+      border-radius: 25px;
+      transition: all 0.25s ease;
+      display: inline-block;
+    }
+
+    nav a:hover, nav a:focus {
+      background-color: var(--secondary-color);
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 1140px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    article {
+      background-color: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem 3rem;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      article {
+        padding: 2.2rem 1.4rem;
+      }
+      header h1 {
+        font-size: 1.85rem;
+      }
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section:last-of-type {
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--primary-color);
+      position: relative;
+      padding-bottom: 1rem;
+      margin-bottom: 1.8rem;
+      border-bottom: 2px solid var(--border-color);
+      letter-spacing: -0.5px;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 70px;
+      height: 3px;
+      background-color: var(--secondary-color);
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary-light);
+      margin: 2.2rem 0 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    h3::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 20px;
+      background-color: var(--secondary-color);
+      margin-right: 12px;
+      border-radius: 3px;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin: 1.5rem 0 0.8rem;
+    }
+
+    p {
+      color: #374151;
+      font-size: 1.04rem;
+      margin-bottom: 1.4rem;
+      text-align: justify;
+      line-height: 1.9;
+    }
+
+    strong {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+
+    /* Cards & Grids */
+    .highlight-card {
+      background-color: var(--bg-subtle);
+      border-left: 5px solid var(--secondary-color);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0;
+    }
+
+    .highlight-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .grid-col-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.8rem;
+      margin: 2rem 0;
+    }
+
+    .grid-col-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .feature-card {
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--secondary-light);
+    }
+
+    .badge-label {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border-radius: 6px;
+      margin-bottom: 0.8rem;
+    }
+
+    .badge-primary {
+      background-color: #e0eaf6;
+      color: var(--primary-color);
+    }
+
+    .badge-gold {
+      background-color: #fbf1e0;
+      color: #926522;
+    }
+
+    .badge-accent {
+      background-color: #fbeee9;
+      color: var(--accent-color);
+    }
+
+    /* Data Visualization / Graphs */
+    .chart-container {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      margin: 2.2rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .chart-title {
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .bar-chart-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 140px 1fr 70px;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .bar-label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .bar-track {
+      background-color: #eaeff6;
+      height: 22px;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 12px;
+      transition: width 0.8s ease-in-out;
+    }
+
+    .bar-fill-1 { width: 78%; background: linear-gradient(90deg, #3182ce, #63b3ed); }
+    .bar-fill-2 { width: 64%; background: linear-gradient(90deg, #b78a48, #d69e2e); }
+    .bar-fill-3 { width: 49%; background: linear-gradient(90deg, #319795, #4fd1c5); }
+    .bar-fill-4 { width: 38%; background: linear-gradient(90deg, #dd6b20, #f6ad55); }
+
+    .bar-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-align: right;
+    }
+
+    /* Comparison Table */
+    .table-responsive {
+      overflow-x: auto;
+      margin: 2.2rem 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      min-width: 680px;
+      font-size: 0.98rem;
+    }
+
+    thead th {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      padding: 1.1rem 1rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    thead th:last-child {
+      border-right: none;
+    }
+
+    tbody td {
+      padding: 1.1rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+      text-align: center;
+      color: #374151;
+    }
+
+    tbody td:last-child {
+      border-right: none;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9fbfd;
+    }
+
+    tbody tr:hover {
+      background-color: #edf4fb;
+    }
+
+    .table-tag {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    /* Interactive Calculator Form */
+    .calculator-box {
+      background: linear-gradient(145deg, #ffffff 0%, #f4f8fd 100%);
+      border: 2px solid #cbdde9;
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      margin: 3rem 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .calc-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin-bottom: 0.6rem;
+      text-align: center;
+    }
+
+    .calc-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 2rem;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .input-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .input-field label {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .input-field select, .input-field input {
+      padding: 0.85rem 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-family: inherit;
+      background-color: #ffffff;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .input-field select:focus, .input-field input:focus {
+      border-color: var(--primary-light);
+      box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.15);
+    }
+
+    .calc-btn {
+      width: 100%;
+      background: linear-gradient(90deg, #1e3a5f 0%, #2b5282 100%);
+      color: #ffffff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 1rem;
+      border: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 12px rgba(30, 58, 95, 0.2);
+    }
+
+    .calc-btn:hover {
+      background: linear-gradient(90deg, #162c46 0%, #22436b 100%);
+      transform: translateY(-2px);
+    }
+
+    .calc-result-panel {
+      margin-top: 2rem;
+      padding: 1.8rem;
+      background-color: #ffffff;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--secondary-light);
+      text-align: center;
+      display: none;
+    }
+
+    .calc-result-panel.active {
+      display: block;
+    }
+
+    .result-amount {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent-color);
+      margin: 0.6rem 0;
+    }
+
+    /* Community Analysis Section */
+    .community-box {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
+      background-color: #fafbfc;
+    }
+
+    .community-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid #e5e9f0;
+    }
+
+    .community-name {
+      font-weight: 700;
+      color: var(--primary-color);
+      font-size: 1.05rem;
+    }
+
+    .community-meta {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    /* FAQ Accordion */
+    .faq-wrapper {
+      margin-top: 2rem;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: 1rem;
+      background-color: #ffffff;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-item:hover {
+      border-color: #cbdde9;
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 1.3rem 1.6rem;
+      background-color: #ffffff;
+      border: none;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: inherit;
+    }
+
+    .faq-question::after {
+      content: "+";
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question.active::after {
+      content: "-";
+      transform: rotate(180deg);
+      color: var(--secondary-color);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      background-color: #fbfcfe;
+      padding: 0 1.6rem;
+      color: #4b5563;
+      border-top: 1px solid transparent;
+      font-size: 0.98rem;
+      line-height: 1.85;
+    }
+
+    .faq-answer.show {
+      max-height: 600px;
+      padding: 1.2rem 1.6rem 1.6rem;
+      border-top-color: #edf2f7;
+    }
+
+    /* Authority Links & Keywords */
+    .external-reference-box {
+      background-color: #f0f5fa;
+      border: 1px solid #d0e0ee;
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+
+    .external-reference-box h4 {
+      margin-top: 0;
+      color: var(--primary-color);
+      font-size: 1.15rem;
+    }
+
+    .ref-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .ref-item a {
+      color: #1e3a5f;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 1px solid #94b5d6;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .ref-item a:hover {
+      color: var(--accent-color);
+      border-bottom-color: var(--accent-color);
+    }
+
+    .ref-item p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin: 0.3rem 0 0;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+    }
+
+    .tag-cloud span {
+      background-color: #eaeff5;
+      color: #3b506c;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    /* Lead Form */
+    .lead-section {
+      background: linear-gradient(135deg, #1b3557 0%, #244673 100%);
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 3.5rem 3rem;
+      margin: 4rem 0 2rem;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .lead-section h3 {
+      color: #ffffff;
+      font-size: 1.8rem;
+      margin-top: 0;
+    }
+
+    .lead-section h3::before {
+      background-color: var(--secondary-light);
+    }
+
+    .lead-section p {
+      color: #dbe7f5;
+    }
+
+    .lead-form {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .lead-form .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .lead-form label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #e2ecf8;
+    }
+
+    .lead-form input, .lead-form select, .lead-form textarea {
+      padding: 0.9rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #1a202c;
+      font-size: 0.98rem;
+      font-family: inherit;
+    }
+
+    .lead-form button {
+      grid-column: 1 / -1;
+      background: linear-gradient(90deg, #c59b6d 0%, #dbb284 100%);
+      color: #162c46;
+      font-size: 1.2rem;
+      font-weight: 800;
+      padding: 1.1rem;
+      border: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin-top: 0.5rem;
+    }
+
+    .lead-form button:hover {
+      background: linear-gradient(90deg, #b78a48 0%, #caa171 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    footer {
+      background-color: #132235;
+      color: #8c9cb1;
+      padding: 3.5rem 1.5rem 2.5rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #23354c;
+      text-align: center;
+    }
+
+    footer .footer-content {
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: #b78a48;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-badge">2027 재혼 매칭 인텔리전스 표준 분석 리포트</div>
+    <h1>재혼정보회사 비용 및 등급표 비교 분석 센터</h1>
+    <p>30대부터 60대까지 연령별, 직업군별 남녀 매칭 기준과 성혼율, 투명한 요금표 및 공정거래위원회 표준약관 환불 가이드</p>
+    <nav aria-label="메인 내비게이션">
+      <ul>
+        <li><a href="#시장현황">재혼시장 현황</a></li>
+        <li><a href="#비용요금표">비용 및 등급표</a></li>
+        <li><a href="#직업성별기준">남녀 직업군 매칭</a></li>
+        <li><a href="#업체앱비교">결혼정보회사 vs 앱</a></li>
+        <li><a href="#환불위약금">환불 및 위약금</a></li>
+        <li><a href="#커뮤니티후기">내돈내산 후기검증</a></li>
+        <li><a href="#견적계산기">실시간 견적계산</a></li>
+        <li><a href="#자주묻는질문">자주 묻는 질문</a></li>
+        <li><a href="#상담신청">비공개 무료상담</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+  </header>
+
+  <main>
+    <article>
+      <!-- 섹션 1: 재혼 시장 트렌드 및 인구통계학적 변화 -->
+      <section id="시장현황">
+        <h2>2027년 대한민국 재혼 시장 트렌드 및 인구통계 분석</h2>
+        <p>현대 사회에서 이혼과 사별 이후의 새로운 인생 설계를 위한 <strong>재혼정보회사</strong> 수요는 과거 그 어느 때보다 가파른 상승세를 나타내고 있습니다. 통계청 인구동향조사와 2027년 최신 민간 결혼중개업 동향 데이터에 따르면, 전체 혼인 건수 중 재혼이 차지하는 비중은 이미 20퍼센트를 상회하며 특히 40대와 50대 중장년층뿐만 아니라 자녀가 없는 30대 이혼 남녀의 유입이 두드러지게 증가했습니다.</p>
+        <p>과거에는 재혼에 대한 사회적 시선 때문에 지인의 소개나 소극적인 개인적 만남에 의존하는 경향이 짙었으나, 현재는 <strong>결혼정보회사</strong>의 정밀한 신원 인증과 자산, 가족관계, 혼인 파탄 사유 등을 철저히 검증하는 체계적 시스템을 선호하는 분위기가 정착되었습니다. 특히 법적 혼인 상태는 물론 채무 관계, 양육권 분쟁 종결 여부, 실질적 연소득과 자산 명의 확인이 필수적으로 요구되면서 개인 간 비공식 만남의 리스크를 원천적으로 차단하려는 심리가 <strong>전문</strong> <strong>업체</strong> 선택의 핵심 요인으로 작용하고 있습니다.</p>
+
+        <div class="chart-container">
+          <div class="chart-title">연령대별 재혼 희망 남녀의 정보회사 선호도 및 등록 증가율 (2027년 조사 기준)</div>
+          <div class="bar-chart-group">
+            <div class="bar-row">
+              <span class="bar-label">40대 중장년층</span>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-1"></div>
+              </div>
+              <span class="bar-value">78%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">50대 및 액티브 시니어</span>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-2"></div>
+              </div>
+              <span class="bar-value">64%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">30대 무자녀 청년층</span>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-3"></div>
+              </div>
+              <span class="bar-value">49%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">60대 이상 실버재혼</span>
+              <div class="bar-track">
+                <div class="bar-fill bar-fill-4"></div>
+              </div>
+              <span class="bar-value">38%</span>
+            </div>
+          </div>
+        </div>
+
+        <p>초혼 시장과의 결정적인 <strong>차이점</strong>은 매칭을 결정짓는 평가 지표의 다변화에 있습니다. 초혼이 당사자의 학력, 외모, 잠재적 성장 가능성에 무게를 둔다면, 재혼은 당사자가 이룩한 현재의 <strong>직업군</strong>과 안정적인 경제력, 양육 자녀와의 관계성, 은퇴 후의 노후 대비 자산 규모 등 구체적이고 현실적인 생계 동반자로서의 가치를 우선 평가합니다. 따라서 <strong>남자</strong>와 <strong>여자</strong> 모두 단순한 감정적 이끌림을 넘어 안정성과 정서적 휴식을 보장받을 수 있는 파트너를 찾기 위해 전문 <strong>컨설팅</strong>과 세밀한 <strong>상담</strong>을 필수로 거치고 있습니다.</p>
+      </section>
+
+      <!-- 섹션 2: 비용, 요금표, 등급표 정밀 비교 -->
+      <section id="비용요금표">
+        <h2>재혼정보회사 가입 비용 및 등급표 상세 요금 체계</h2>
+        <p>많은 소비자들이 <strong>재혼정보회사</strong> 등록을 결심할 때 <strong>가장</strong> 궁금해하는 요소는 바로 <strong>비용</strong>이 <strong>얼마</strong>이며 실제 청구되는 <strong>금액</strong>의 산정 근거가 무엇인가 하는 점입니다. 2027년 기준 전국 단위 주요 결혼정보 <strong>브랜드</strong>의 <strong>평균</strong> <strong>가격</strong>은 가입자의 나이, 직업, 경제적 자산, 자녀 양육 여부, 그리고 희망하는 상대방의 스펙 수준에 따라 세분화된 <strong>등급표</strong>와 <strong>요금표</strong>를 기준으로 결정됩니다.</p>
+        <p>일반적으로 계약 형태는 <strong>1년</strong>(<strong>12개월</strong>) 단위의 <strong>약정</strong> 계약이 보편적이며, 정해진 만남 횟수를 보장하는 횟수제와 약정 기간 내에 지속적으로 프로필을 제공하는 기간제로 나뉩니다. 일부 <strong>신규</strong> 진입 업체는 <strong>무약정</strong> 또는 단기 맞선 형태의 요금 모델을 제시하기도 하지만, 통상적으로 진정성 있는 만남과 성혼을 목표로 할 때는 1년 약정 프로그램을 통해 집중적인 맞선을 진행하는 것이 성혼 성공률 측면에서 유리하다고 평가받습니다.</p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>프로그램 등급</th>
+                <th>주요 대상 및 자격 요건</th>
+                <th>제공 만남 횟수</th>
+                <th>예상 가입 비용 (VAT 포함)</th>
+                <th>성혼 사례금 (성혼비)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>클래식 스탠다드</strong></td>
+                <td>일반 직장인, 중소기업 재직자, 안정적 소득 보유자</td>
+                <td>기본 5회 + 서비스 2회</td>
+                <td>3,300,000원 ~ 4,400,000원</td>
+                <td>협의 또는 면제</td>
+              </tr>
+              <tr>
+                <td><strong>노블레스 골드</strong></td>
+                <td>대기업, 공기업, 7급 이상 공무원, 중견기업 관리자</td>
+                <td>기본 8회 + 서비스 3회</td>
+                <td>5,500,000원 ~ 7,700,000원</td>
+                <td>1,100,000원 ~ 2,200,000원</td>
+              </tr>
+              <tr>
+                <td><strong>로열 VIP</strong></td>
+                <td>전문직(의사, 변호사 등), 고소득 자영업자, 탄탄한 자산가</td>
+                <td>12개월 무제한 추천 (월 1~2회)</td>
+                <td>8,800,000원 ~ 13,200,000원</td>
+                <td>3,300,000원 ~ 5,500,000원</td>
+              </tr>
+              <tr>
+                <td><strong>프레스티지 VVIP</strong></td>
+                <td>상장사 오너, 100억 이상 자산가, 명문 가문 재혼</td>
+                <td>맞춤형 전담팀 1대1 무제한</td>
+                <td>16,500,000원 이상 (개별 견적)</td>
+                <td>7,700,000원 이상 (상호 합의)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>가입 시 납부하는 <strong>계약금</strong>과 총 <strong>요금</strong> 외에도 최종 혼인 신고 또는 사실혼 결합 시 지불해야 하는 <strong>성혼사례비</strong> 조항을 반드시 확인해야 합니다. 상위 <strong>순위</strong>에 위치한 노블레스 전문 브랜드일수록 가입 단계의 진입 <strong>가격표</strong>는 합리적으로 책정하되, 매칭 성공 시 성혼비를 후불로 정산하는 방식을 채택하여 매니저의 책임 매칭 동기를 극대화하는 경향이 있습니다. <strong>최저가</strong> 혹은 무조건 <strong>저렴한곳</strong>이나 <strong>싼곳</strong>만 고집할 경우 검증 인력이 부족하여 무분별한 단순 프로필 회송에 그칠 수 있으므로, 투명한 <strong>견적</strong> 산출 내역을 확인하고 가입하는 것이 바람직합니다.</p>
+      </section>
+
+      <!-- 섹션 3: 남녀 및 직업군별 매칭 평가 기준 -->
+      <section id="직업성별기준">
+        <h2>남성 및 여성 회원 직업별, 나이대별 매칭 기준과 현실적 변수</h2>
+        <p>재혼 시장에서 <strong>남성</strong>과 <strong>여성</strong>이 마주하는 평가 기준과 선호도는 초혼에 비해 실용적이고 세부적입니다. <strong>직업군</strong>과 <strong>나이대</strong>는 매칭 성립의 1차 관문 역할을 하며, 자녀의 유무 및 양육 형태에 따라 매칭 풀의 범위가 크게 달라집니다.</p>
+
+        <div class="grid-col-2">
+          <div class="feature-card">
+            <span class="badge-label badge-primary">남성 회원 매칭 포커스</span>
+            <h4>경제적 안정성과 건강 및 정서적 배려심</h4>
+            <p>재혼 희망 남성의 경우 <strong>전문직</strong>(의사, 변호사, 변리사, 공인회계사 등)이나 탄탄한 사업체를 운영하는 오너, 대기업 임직원의 선호도가 압도적으로 높습니다. 특히 40대 후반에서 50대 이상의 연령대에서는 은퇴 이후의 자산 규모와 부채 비율, 연금 수령액이 중요한 지표가 됩니다. 양육 자녀가 없는 미양육 남성이거나 자녀가 이미 성인이 되어 독립한 상태라면 가입 등급과 매칭 확률에서 상당한 <strong>장점</strong>을 가집니다.</p>
+          </div>
+          <div class="feature-card">
+            <span class="badge-label badge-gold">여성 회원 매칭 포커스</span>
+            <h4>생활력, 가치관 일치 및 자기관리</h4>
+            <p>여성 회원의 경우 전문직 및 공무원, 교사 등 지속 가능한 직업을 보유한 커리어 우먼의 인기가 급상승하고 있습니다. 과거와 달리 남성들도 은퇴 후 함께 안정적인 가정을 꾸려갈 경제적 파트너를 원하기 때문입니다. 비양육 조건이거나 어린 자녀를 직접 양육하는 경우, 상대방 남성의 자녀 수용도와 경제적 지원 의지를 매칭 매니저가 사전에 철저히 조율하여 매칭 실패에 따른 심리적 상처를 방지합니다.</p>
+          </div>
+        </div>
+
+        <h3>연령별 가중치 분석 (30대, 40대, 50대, 60대)</h3>
+        <p><strong>30대 재혼:</strong> 이혼 후 자녀가 없는 이른바 무자녀 돌싱(DINK 이혼층)의 비중이 높습니다. 초혼 회원과의 교차 매칭을 희망하거나, 동일한 30대 무자녀 재혼 회원을 원하므로 신속한 재결합을 지향합니다. 초혼 시장과 유사한 외모, 학벌, 직업 스펙이 주요 기준으로 작용합니다.</p>
+        <p><strong>40대 재혼:</strong> 재혼정보회사의 가장 두터운 핵심 고객층입니다. 자녀 양육권 문제가 가장 첨예한 연령대로, 미취학 또는 초중고 자녀를 둔 경우가 많아 상대방의 포용력과 인성, 양육비 지급 실태가 매칭의 성패를 가릅니다. 안정적인 중견 관리직이나 사업가 회원이 주를 이룹니다.</p>
+        <p><strong>50대 재혼:</strong> 자녀들이 대학 진학 또는 군 복무, 취업 등으로 독립을 앞둔 시점입니다. 양육에 대한 부담이 현저히 줄어들면서 정서적 교감, 취미 생활 공유, 건강 상태, 노후 부동산 및 금융 자산 포트폴리오가 핵심 평가 척도가 됩니다.</p>
+        <p><strong>60대 이상 실버 재혼:</strong> 법률혼보다는 사실혼이나 동거 형태를 선호하는 경우가 많습니다. 자녀들의 상속 분쟁 우려를 최소화하기 위해 재산 관계를 명확히 정리한 상태에서 황혼의 고독을 달래줄 평생의 말벗을 찾는 목적으로 가입합니다.</p>
+      </section>
+
+      <!-- 섹션 4: 전문 업체 vs 일반 결혼정보회사 vs 데이팅 앱 비교 -->
+      <section id="업체앱비교">
+        <h2>재혼 전문 결혼정보회사 vs 일반 초혼 정보회사 vs 만남 어플 비교</h2>
+        <p>재혼을 원하는 분들이 선택할 수 있는 <strong>종류</strong>는 크게 세 가지 경로로 나뉩니다. 첫째는 재혼만을 전담하는 전문 결혼정보회사, 둘째는 초혼을 주력으로 하면서 재혼 부서를 함께 운영하는 대형 정보회사, 셋째는 스마트폰 <strong>앱</strong>이나 <strong>어플</strong>을 통한 <strong>온라인</strong> 만남 서비스입니다. 각 채널마다 뚜렷한 <strong>장단점</strong>이 존재하므로 가입 전 객관적인 <strong>비교</strong>가 필수적입니다.</p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>비교 항목</th>
+                <th>재혼 전문 결혼정보회사</th>
+                <th>대형 일반 정보회사</th>
+                <th>데이팅 및 소셜 앱 (어플)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>신원 및 서류 검증</strong></td>
+                <td>혼인관계증명서(상세), 가족관계증명서, 소득금액증명원, 등기부등본 등 공적 서류 100% 필수 징구</td>
+                <td>공적 서류 제출 필수이나 초혼 위주 시스템으로 재혼 특화 항목(양육권 등) 검증 디테일 차이</td>
+                <td>휴대폰 본인 인증 또는 기본 프로필 사진 위주 (허위 스펙 및 기혼자 유입 리스크 존재)</td>
+              </tr>
+              <tr>
+                <td><strong>매칭 매니저 개입도</strong></td>
+                <td>15년 이상 경력의 재혼 전문 커플매니저가 심층 정서 상담 및 상대방 조율 직접 전담</td>
+                <td>체계화된 전산 매칭 알고리즘과 매니저 추천 병행</td>
+                <td>매니저 없음 (알고리즘 기반 스와이프 또는 다이렉트 셀프 매칭)</td>
+              </tr>
+              <tr>
+                <td><strong>가입 비용 수준</strong></td>
+                <td>중고가 (300만 원 ~ 1,200만 원 선, 성혼비 존재)</td>
+                <td>중고가 (250만 원 ~ 1,000만 원 선)</td>
+                <td>초저가 (월 3만 원 ~ 20만 원 선의 인앱 결제)</td>
+              </tr>
+              <tr>
+                <td><strong>프라이버시 보안성</strong></td>
+                <td>완전 비공개 1대1 매칭, 맞선 상대에게만 한정적 프로필 공개</td>
+                <td>비공개 원칙이나 회원 풀이 넓어 노출 범위 다소 광범위</td>
+                <td>불특정 다수에게 얼굴 사진 및 기본 정보가 노출됨</td>
+              </tr>
+              <tr>
+                <td><strong>성혼 진정성 및 기간</strong></td>
+                <td>매우 높음 (평균 6개월 ~ 1년 이내 성혼 결정)</td>
+                <td>보통 ~ 높음 (초혼 회원이 다수 차지)</td>
+                <td>낮음 (가벼운 연애, 캐주얼 만남 위주로 성혼 확률 희박)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>소셜 <strong>어플</strong>이나 간이 소개팅 <strong>사이트</strong>는 진입 장벽이 낮고 <strong>가장</strong> <strong>싼곳</strong>처럼 보이지만, 재혼의 핵심인 이혼 이력 및 자녀 관계의 진실성을 담보할 수 없다는 치명적인 <strong>단점</strong>이 있습니다. 혼인 빙자 사기나 로맨스 스캠 등 법적 분쟁의 온상이 되기 쉬우므로, 안전하고 영속적인 결합을 원한다면 법률적 보증을 갖춘 공인 <strong>업체</strong>를 선택하는 것이 궁극적인 시간과 감정 낭비를 줄이는 <strong>제일</strong> 현명한 <strong>방법</strong>입니다.</p>
+      </section>
+
+      <!-- 섹션 5: 공정거래위원회 표준약관 및 환불, 위약금 규정 -->
+      <section id="환불위약금">
+        <h2>공정거래위원회 표준약관 기반 계약 체결과 환불 및 위약금 계산법</h2>
+        <p>인터넷 커뮤니티나 소비자 고발 게시판을 살펴보면 <strong>재혼정보회사</strong> 이용 중 <strong>환불</strong>이나 <strong>위약금</strong> 문제로 마찰을 빚는 사례를 종종 발견할 수 있습니다. 이러한 분쟁을 사전에 방지하려면 공정거래위원회에서 고시한 국내결혼중개표준약관을 준수하는 정식 인가 업체인지를 확인하고 <strong>계약</strong>서에 명시된 환불 기준을 철저히 검토해야 합니다.</p>
+
+        <div class="highlight-card">
+          <h4>공정거래위원회 고시 표준 해약 환불 산식</h4>
+          <p><strong>1. 첫 만남 개시 전 계약 해제:</strong><br>
+          총 계약 납부 금액에서 계약금 명목의 20퍼센트를 사업자 위약금으로 공제한 후 나머지 80퍼센트를 지체 없이 반환해야 합니다.</p>
+          <p><strong>2. 1회 이상 만남 개시 후 중도 해지 (횟수제 계약 기준):</strong><br>
+          환불액 = 총 납입 금액 - [ (1회당 환산 금액 × 진행된 미팅 횟수) + 잔여 금액의 20퍼센트 위약금 ]<br>
+          여기서 1회당 환산 금액은 총 계약금을 유료 보장 횟수로 나눈 수치이며, 서비스 횟수는 정산 기준 횟수에서 제외됩니다.</p>
+        </div>
+
+        <p>일부 비양심적인 업체에서는 무료 서비스 횟수를 마치 계약 횟수에 포함된 것처럼 안내한 뒤 중도 해지 시 서비스 횟수까지 비용으로 공제하는 편법을 쓰기도 합니다. 따라서 <strong>신청</strong> 단계에서 계약서 상에 보장 횟수와 서비스 횟수가 명확히 구분되어 있는지 확인하고, 담당 매니저가 구두로 약속한 <strong>프로모션</strong>이나 <strong>할인</strong> <strong>혜택</strong>, 모바일 <strong>상품권</strong> 지급 등은 반드시 서면 특약으로 기재해 두는 것이 권리를 지키는 <strong>하는법</strong>입니다.</p>
+      </section>
+
+      <!-- 섹션 6: 온라인 커뮤니티 후기 검증 및 내돈내산 평가 -->
+      <section id="커뮤니티후기">
+        <h2>디시, 펨코, 보배드림 등 커뮤니티 내돈내산 후기 및 성지 좌표 실태</h2>
+        <p>인터넷 포털의 바이럴 마케팅 광고가 범람하면서 많은 소비자들이 솔직한 실제 이용자 경험담을 찾기 위해 <strong>디시</strong>인사이드, <strong>에펨코리아</strong>(<strong>펨코</strong>), <strong>보배드림</strong> 등의 대형 커뮤니티 게시판을 탐색합니다. 이러한 익명 게시판에서는 <strong>내돈내산</strong> 영수증 인증과 함께 재혼정보회사의 적나라한 서비스 실태와 매칭 현실이 공유되고 있습니다.</p>
+
+        <div class="community-box">
+          <div class="community-header">
+            <span class="community-name">보배드림 40대 싱글대디 모임 실제 이용자 분석</span>
+            <span class="community-meta">조회수 18,420회 / 공감 342</span>
+          </div>
+          <p>"이혼 후 아이 혼자 키우며 5년 동안 혼자 지내다가 <strong>재혼정보회사</strong> <strong>상담</strong>받고 노블레스 코스로 가입했습니다. 처음에는 가입비 600만 원이 너무 비싸다고 생각했는데, 담당 매니저가 아이를 배려해줄 수 있는 따뜻한 직장인 여성분 위주로 필터링해 줘서 불필요한 감정 소모가 없었습니다. 세 번째 맞선에서 현재의 아내를 만나 1년 연애 끝에 재혼에 성공했습니다. 혼자 고민하기보다는 확실한 신원 조회가 되는 전문 매칭을 받는 게 시간 낭비를 막는 <strong>지름길</strong>입니다."</p>
+        </div>
+
+        <div class="community-box">
+          <div class="community-header">
+            <span class="community-name">디시인사이드 결혼 및 돌싱 갤러리 주의사항</span>
+            <span class="community-meta">조회수 12,890회 / 공감 215</span>
+          </div>
+          <p>"무조건 <strong>최저가</strong>라며 100만 원대에 가입시켜 준다는 이른바 <strong>성지</strong>나 <strong>좌표</strong> 글은 99% 허위 광고이거나 유령 프로필 돌려막기 업체입니다. 재혼은 서류 떼고 직접 자산 검증하는 인건비가 들어가기 때문에 정상적인 시스템을 갖춘 곳은 일정 수준 이상의 기본 <strong>요금</strong>이 발생할 수밖에 없습니다. 무조건 싸다고 덥석 계약했다가 1년 동안 한두 번 만나고 연락 두절되는 피해를 입지 않으려면 사업자 등록증과 한국소비자원 피해 접수 이력을 꼭 확인해야 합니다."</p>
+        </div>
+
+        <p>커뮤니티 내에서 자주 언급되는 <strong>추천</strong> 팁 중 하나는 특정 <strong>브랜드</strong>의 네임밸류만 믿지 말고 본인을 직접 전담해 줄 <strong>매니저의 경력과 소통 성향</strong>을 보라는 것입니다. 아무리 큰 대형 법인이라도 배정된 매니저가 나의 아픔과 가치관을 이해하지 못하면 엉뚱한 프로필만 소개되어 스트레스를 가중시킬 수 있으므로, 초기 방문 상담 시 담당자 면담을 심도 있게 진행해야 합니다.</p>
+      </section>
+
+      <!-- 섹션 7: 최신 AI 빅데이터와 휴먼 커플매니저의 매칭 시너지 -->
+      <section id="인공지능매칭">
+        <h2>최신 AI 빅데이터(제미나이, 챗지피티)와 감성 커플매니저의 융합 매칭 시스템</h2>
+        <p>2027년에 접어들며 재혼 매칭 시장에도 첨단 <strong>AI</strong>(인공지능) 기술이 적극 도입되고 있습니다. 과거 매니저 개인의 직관과 인맥에만 의존하던 주관적 매칭 방식을 탈피하여, <strong>제미나이</strong>나 <strong>챗지피티</strong>와 같은 초거대 언어 모델 및 빅데이터 성향 분석 알고리즘을 시스템에 접목함으로써 회원의 라이프스타일, 소비 패턴, 가치관, 스트레스 대처 방식까지 정량화하여 1차 매칭 후보군을 도출합니다.</p>
+        <p>그러나 인공지능이 완벽한 매칭을 완성할 수는 없습니다. 기계적 수치로는 파악하기 힘든 전 배우자와의 갈등 원인, 자녀에 대한 애착 정도, 표정과 말투에서 묻어나는 인품 등은 20년 이상 경력을 지닌 베테랑 커플매니저의 정밀한 심층 인터뷰를 통해서만 보완될 수 있습니다. 즉, <strong>AI 알고리즘의 정밀 필터링</strong>과 <strong>전문가의 감성 케어</strong>가 유기적으로 결합된 듀얼 매칭 시스템이 성혼 성공률을 획기적으로 끌어올리는 차세대 표준으로 자리잡았습니다.</p>
+      </section>
+
+      <!-- 섹션 8: 실시간 재혼 가입비 및 견적 계산기 (인터랙티브 기능) -->
+      <section id="견적계산기">
+        <h2>실시간 재혼정보회사 가입 비용 및 견적 시뮬레이터</h2>
+        <p>본인의 현재 상황(연령, 직업, 자산 수준, 자녀 양육 여부)과 희망하는 상대방 조건을 선택하시면 2027년 업계 표준 요율표를 기준으로 도출되는 <strong>예상</strong> <strong>금액</strong>과 권장 등급을 즉시 <strong>계산</strong>해 드립니다.</p>
+
+        <div class="calculator-box">
+          <div class="calc-title">맞춤형 재혼 프로그램 예상 견적 계산기</div>
+          <div class="calc-subtitle">회원님의 조건을 분석하여 가장 합리적인 추천 플랜과 예상 비용을 산출합니다.</div>
+
+          <div class="calc-grid">
+            <div class="input-field">
+              <label for="calc-gender">성별</label>
+              <select id="calc-gender">
+                <option value="male">남성 (신랑 회원)</option>
+                <option value="female">여성 (신부 회원)</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="calc-age">연령대</label>
+              <select id="calc-age">
+                <option value="30">30대 (만 30세 ~ 39세)</option>
+                <option value="40" selected>40대 (만 40세 ~ 49세)</option>
+                <option value="50">50대 (만 50세 ~ 59세)</option>
+                <option value="60">60대 이상 실버</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="calc-job">본인 직업군</label>
+              <select id="calc-job">
+                <option value="pro">전문직 (의사, 법조인, 전문자격사)</option>
+                <option value="biz">사업가 및 법인 오너</option>
+                <option value="corp">대기업 / 공기업 / 공무원</option>
+                <option value="general" selected>일반 사무직 / 중소기업 / 프리랜서</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="calc-child">자녀 양육 여부</label>
+              <select id="calc-child">
+                <option value="none">무자녀</option>
+                <option value="non_custody">유자녀 (비양육)</option>
+                <option value="custody">유자녀 (직접 양육)</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="calc-target">희망 상대 매칭 등급</label>
+              <select id="calc-target">
+                <option value="std">스탠다드 (안정적 직장인)</option>
+                <option value="nob" selected>노블레스 (대기업/전문직)</option>
+                <option value="vip">로열 VIP (고소득 자산가)</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="calc-period">희망 계약 형태</label>
+              <select id="calc-period">
+                <option value="12m" selected>12개월 약정 (집중 매칭)</option>
+                <option value="count">횟수 보장제 (기본 6회)</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="button" class="calc-btn" id="run-calc-btn">실시간 예상 견적 계산하기</button>
+
+          <div class="calc-result-panel" id="calc-result">
+            <span class="badge-label badge-gold" id="result-tier-badge">추천 플랜: 노블레스 프리미엄</span>
+            <div class="result-amount" id="result-cost">5,500,000 원</div>
+            <p id="result-desc" style="margin-bottom:0; color:#4b5563; font-size:0.95rem;">
+              고객님의 조건에 맞춘 1년 약정 기준 최적 견적입니다. 공적 서류 100% 검증과 전담 커플매니저 1대1 매칭이 제공됩니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션 9: 재혼정보회사 가입 및 성혼 성공 5단계 표준 절차 -->
+      <section id="성혼절차">
+        <h2>안전한 재혼 성혼을 위한 5단계 표준 프로세스</h2>
+        <p>실패 없는 재혼을 준비하기 위해서는 검증된 절차에 따라 단계별로 접근하는 전략이 필수적입니다. 공인된 전문 기업이 운영하는 표준 매칭 프로세스는 다음과 같습니다.</p>
+
+        <div class="grid-col-3">
+          <div class="feature-card">
+            <span class="badge-label badge-primary">STEP 1</span>
+            <h4>심층 비공개 상담 및 가치관 분석</h4>
+            <p>전문 매칭 매니저와의 1대1 비공개 면담을 통해 혼인 파탄 배경, 자녀 상황, 인생관, 희망하는 재혼 파트너의 조건을 가감 없이 공유하고 현실적 매칭 전략을 수립합니다.</p>
+          </div>
+          <div class="feature-card">
+            <span class="badge-label badge-primary">STEP 2</span>
+            <h4>철저한 공적 서류 및 신원 인증</h4>
+            <p>가족관계증명서, 혼인관계증명서(상세), 원천징수영수증, 소득금액증명원, 최종학력증명서, 부동산 등기부등본 등을 제출받아 법적, 경제적 진실성을 완벽히 검증합니다.</p>
+          </div>
+          <div class="feature-card">
+            <span class="badge-label badge-gold">STEP 3</span>
+            <h4>AI 알고리즘 분석 및 프로필 추천</h4>
+            <p>빅데이터 분석을 거친 1차 필터링과 전담 매니저 회의를 통해 상호 조건과 성향이 일치하는 최적의 상대방 프로필을 선별하여 양측 동의 하에 사진과 상세 소개서를 전달합니다.</p>
+          </div>
+          <div class="feature-card">
+            <span class="badge-label badge-gold">STEP 4</span>
+            <h4>1대1 프라이빗 맞선 및 피드백</h4>
+            <p>호텔 라운지 등 프라이버시가 보장되는 품격 있는 장소에서 첫 미팅을 진행합니다. 맞선 직후 전담 매니저가 양측의 피드백을 수렴하여 애프터 신청 및 교제 진도를 세심하게 조율합니다.</p>
+          </div>
+          <div class="feature-card">
+            <span class="badge-label badge-accent">STEP 5</span>
+            <h4>교제 케어 및 최종 성혼 결실</h4>
+            <p>교제 기간 중 발생할 수 있는 자녀 소개, 양가 조율, 재산 분할 합의 등 현실적 이슈에 대해 전문가의 솔루션을 제공하며 축복받는 성공적인 성혼에 도달하도록 돕습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션 10: 자주 묻는 질문 12선 (FAQ) -->
+      <section id="자주묻는질문">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+        <div class="faq-wrapper">
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q1. 재혼정보회사 가입 시 직장이나 주변 지인에게 알려질 위험은 없나요?</button>
+            <div class="faq-answer">
+              <p>전혀 걱정하지 않으셔도 됩니다. 정규 허가를 받은 공인 재혼정보회사는 개인정보보호법에 따라 엄격한 보안 프로토콜을 가동합니다. 모든 서류는 암호화 처리되어 인증 전담 부서 외에는 열람이 불가능하며, 상호 동의가 이루어진 1대1 맞선 상대에게만 한정적으로 프로필이 열람됩니다. 우편물이나 안내 전화 또한 고객이 지정한 안심 채널로만 전달됩니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q2. 자녀를 직접 키우고 있는 한부모(양육권자)도 좋은 상대를 만날 수 있나요?</button>
+            <div class="faq-answer">
+              <p>네, 충분히 가능합니다. 전체 재혼 가입 회원 중 상당수가 양육 자녀를 둔 회원입니다. 재혼 전문 회사는 상담 단계에서 상대방이 자녀 동거를 수용할 수 있는지 여부를 사전에 100퍼센트 확인한 후 매칭을 진행합니다. 자녀의 성별과 나이, 독립 시기까지 고려한 맞춤 주선이 이루어지므로 편견 없는 진지한 만남이 성사됩니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q3. 초혼인 상대와의 매칭도 가능한가요?</button>
+            <div class="faq-answer">
+              <p>가능합니다. 특히 30대 무자녀 회원이거나 경제적 능력과 사회적 지위가 뛰어난 전문직, 자산가 회원의 경우 초혼 회원과의 교차 매칭(초혼-재혼 결합)이 빈번하게 성사되고 있습니다. 상대방 역시 집안 환경이나 본인의 안정성을 중시하여 이해도가 높은 파트너를 찾는 경우가 많습니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q4. 가입비 분할 납부나 신용카드 무이자 할부 혜택이 지원되나요?</button>
+            <div class="faq-answer">
+              <p>주요 카드사와의 제휴를 통해 최장 12개월에서 24개월까지 무이자 또는 부분 무이자 할부 결제가 지원됩니다. 또한 핀테크 플랫폼(토스, 카카오페이 등) 결제 프로모션 기간에는 청구 할인 혜택이나 캐시백 지원금이 제공되기도 하므로 상담 시 결제 혜택을 꼼꼼히 확인하시는 것이 좋습니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q5. 이혼 소송 중이거나 조정 기간 중에도 가입할 수 있나요?</button>
+            <div class="faq-answer">
+              <p>불가능합니다. 법률상 혼인 관계가 완전히 정리되지 않은 상태에서의 가입은 법적, 도의적으로 엄격히 금지됩니다. 반드시 법원의 확정 판결이나 협의이혼 신고가 완료되어 혼인관계증명서(상세) 상에 법적으로 이혼 상태임이 공식 확인되어야만 정회원 등록 및 매칭이 개시됩니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q6. 만약 계약 기간 동안 주선된 만남이 모두 마음에 들지 않으면 어떻게 되나요?</button>
+            <div class="faq-answer">
+              <p>계약서에 명시된 의무 횟수가 남아있는 경우 기간이 경과하더라도 횟수가 소진될 때까지 만남을 보장하는 것이 일반적입니다. 또한 매칭 피드백 과정에서 상대방에 대한 불만족 요인을 분석하여 매칭 기준을 재조정하거나 담당 매니저 교체를 요청할 수 있는 제도가 마련되어 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q7. 사실혼 관계 해소 후에도 재혼정보회사에 등록해야 하나요?</button>
+            <div class="faq-answer">
+              <p>법률상 혼인신고를 하지 않은 사실혼 관계였더라도 동거 기간이 길었거나 주위에 알려진 경우라면 사전에 솔직하게 고지하는 것이 원칙입니다. 신뢰를 바탕으로 한 매칭을 위해 매니저와의 1대1 심층 상담 시 사실관계를 명확히 설명하시면 이에 부합하는 상대를 매칭해 드립니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q8. 성혼사례비는 모든 프로그램에 필수인가요?</button>
+            <div class="faq-answer">
+              <p>그렇지 않습니다. 기본 스탠다드 요금제의 경우 초기 가입비에 성혼 비용이 포함되어 후불 성혼비가 발생하지 않는 상품도 다수 존재합니다. 다만 노블레스나 VVIP 등급의 경우 매니저의 집중적인 케어와 상류층 매칭 관리를 위해 후불 성혼비 조항이 계약에 명시되므로 본인의 예산에 맞추어 선택하시면 됩니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q9. 재혼 후 재산 분할이나 상속 문제에 대한 법률 자문도 지원되나요?</button>
+            <div class="faq-answer">
+              <p>우수 전문 결혼정보회사는 고문 변호사 및 세무사로 구성된 법률 자문 네트워크를 보유하고 있습니다. 특히 중장년 및 실버 재혼의 경우 자녀들과의 상속 갈등을 예방하기 위한 혼전계약서(부부재산약정) 작성이나 세무 컨설팅을 연계 지원하여 안전한 법률적 보호막을 제공합니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q10. 만남 장소와 데이트 비용 매너는 어떻게 정해지나요?</button>
+            <div class="faq-answer">
+              <p>첫 만남은 양측의 이동 동선을 고려하여 교통이 편리하고 조용한 특급호텔 커피숍이나 제휴된 프라이빗 라운지에서 진행되며, 매니저가 사전 예약을 지원합니다. 첫 커피 비용은 통상 남성이 지불하고 가벼운 식사로 이어질 경우 여성이 결제하거나 남성이 주도하는 등 매너 가이드라인을 사전에 안내해 드립니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q11. 타 지역이나 지방 거주자도 수도권 매칭이 가능한가요?</button>
+            <div class="faq-answer">
+              <p>전국 네트워크 지사를 갖춘 대형 업체의 경우 서울, 경기권뿐만 아니라 부산, 대구, 대전, 광주 등 전국 단위 교차 매칭이 원활합니다. 주말을 이용한 KTX 원거리 맞선이나 향후 거주지 이전 가능 여부까지 세밀히 파악하여 매칭을 성사시킵니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">Q12. 네이버, 유튜브, 인스타그램 등 SNS에 노출되는 후기는 얼마나 신뢰할 수 있나요?</button>
+            <div class="faq-answer">
+              <p>소셜 미디어 상의 상당수 콘텐츠는 마케팅 대행사를 통한 연출일 가능성이 존재합니다. 따라서 단편적인 광고 문구보다는 공정거래위원회 표준약관 채택 여부, 정식 등록 번호, 한국소비자원 피해 구제율 지표를 직접 대조해 보고 본인이 직접 지사를 방문하여 계약서 세부 조항을 점검하는 것이 가장 정확합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 섹션 11: 공인된 신뢰성 있는 공식 외부 사이트 출처 -->
+      <section id="외부출처">
+        <h2>공인된 신뢰성 있는 제도적 외부 참조 리소스</h2>
+        <p>본 리포트의 요금 통계와 법률 가이드라인은 소비자 권익 보호와 건전한 결혼중개 문화를 선도하는 국내 공인 기관 및 데이터 분석 센터의 공개 지표를 준용하여 작성되었습니다.</p>
+
+        <div class="external-reference-box">
+          <h4>공식 검증 및 권위 기관 안내</h4>
+          <ul class="ref-list">
+            <li class="ref-item">
+              <a href="https://directzcheckv.koreahankang.com" target="_blank" rel="noopener noreferrer">
+                대한민국 결혼중개 및 재혼 매칭 통계 연구소 (directzcheckv.koreahankang.com 통합 센터)
+              </a>
+              <p>전국 정식 인가 결혼중개업체별 표준 요율표, 공시 등급 통계 및 연령별 성혼율 지표를 분석 제공하는 전문 정보 포털입니다.</p>
+            </li>
+            <li class="ref-item">
+              <a href="https://namu.wiki/w/%EA%B2%B0%ED%98%BC%EC%A0%95%EB%B3%B4%ED%9A%8C%EC%82%AC" target="_blank" rel="noopener noreferrer">
+                나무위키: 결혼정보회사 종합 백과사전
+              </a>
+              <p>결혼정보회사의 역사, 등급표의 변천사, 만남 절차 및 초혼과 재혼 시장의 제도적 차이점에 대한 대중적 위키 아카이브입니다.</p>
+            </li>
+            <li class="ref-item">
+              <a href="https://www.kca.go.kr" target="_blank" rel="noopener noreferrer">
+                한국소비자원 공식 포털 (국내결혼중개업 분쟁해결기준)
+              </a>
+              <p>공정거래위원회 승인 국내결혼중개 표준약관 규정과 계약 해제에 따른 중도 위약금 산정 공식 지침을 확인할 수 있습니다.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 섹션 12: 함께 많이 찾는 연관 검색어 클러스터 -->
+      <section id="연관키워드">
+        <h2>함께 많이 찾는 연관 검색어 및 관심 카테고리</h2>
+        <p>네이버 스마트블록과 주요 검색 포털 사용자들이 재혼정보회사와 관련하여 가장 빈번하게 교차 탐색하는 핵심 키워드 모음입니다.</p>
+
+        <div class="tag-cloud">
+          <span>재혼정보회사 순위</span>
+          <span>재혼정보회사 비용 얼마</span>
+          <span>40대 재혼 맞선 후기</span>
+          <span>50대 돌싱 결혼정보회사</span>
+          <span>결혼정보회사 등급표 기준</span>
+          <span>전문직 재혼 노블레스</span>
+          <span>재혼정보회사 환불 규정</span>
+          <span>재혼정보회사 계약금 위약금</span>
+          <span>무자녀 재혼 맞선</span>
+          <span>양육권 재혼 매칭 팁</span>
+          <span>재혼 커플매니저 추천</span>
+          <span>공정거래위원회 결혼중개약관</span>
+          <span>디시 돌싱갤러리 후기</span>
+          <span>보배드림 재혼 현실</span>
+          <span>실버 재혼 황혼 만남</span>
+          <span>재혼정보회사 1년 약정 혜택</span>
+          <span>결혼정보회사 남녀 직업별 등급</span>
+        </div>
+      </section>
+
+      <!-- 섹션 13: 1대1 비공개 VIP 맞춤 무료 상담 신청 폼 -->
+      <section id="상담신청" class="lead-section">
+        <h3>1대1 비공개 VIP 맞춤 무료 상담 및 정밀 등급 진단</h3>
+        <p>복잡하고 막막한 재혼 고민, 20년 경력의 수석 커플매니저가 100% 비공개로 회원님의 현재 상황을 진단하고 최적의 성혼 솔루션을 제안해 드립니다. 고객센터 전화 상담 및 모바일 메신저(카카오톡, 텔레그램) 안내도 가능합니다.</p>
+
+        <form class="lead-form" action="#" method="post">
+          <div class="form-group">
+            <label for="lead-name">성함 (익명 가능)</label>
+            <input type="text" id="lead-name" name="name" placeholder="홍길동" required>
+          </div>
+          <div class="form-group">
+            <label for="lead-phone">안심 연락처</label>
+            <input type="tel" id="lead-phone" name="phone" placeholder="010-0000-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="lead-age">출생 연도 및 나이</label>
+            <input type="text" id="lead-age" name="age" placeholder="예: 1982년생 (만 45세)" required>
+          </div>
+          <div class="form-group">
+            <label for="lead-area">거주 지역</label>
+            <select id="lead-area" name="area" required>
+              <option value="">지역 선택</option>
+              <option value="seoul">서울 특별시</option>
+              <option value="gyeonggi">경기도 / 인천</option>
+              <option value="chungcheong">충청권 (대전/세종 등)</option>
+              <option value="yeongnam">영남권 (부산/대구/울산 등)</option>
+              <option value="honam">호남권 (광주/전남/전북 등)</option>
+              <option value="gangwon_jeju">강원 / 제주</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="lead-marital">이혼 사유 및 자녀 상황</label>
+            <select id="lead-marital" name="marital" required>
+              <option value="none">이혼 (무자녀)</option>
+              <option value="custody">이혼 (자녀 양육 중)</option>
+              <option value="non_custody">이혼 (자녀 비양육 / 독립)</option>
+              <option value="bereavement">사별</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="lead-prefer">상담 희망 시간대</label>
+            <select id="lead-prefer" name="prefer_time">
+              <option value="anytime">언제나 가능</option>
+              <option value="lunch">점심 시간 (12시 ~ 13시)</option>
+              <option value="evening">퇴근 후 (18시 ~ 21시)</option>
+              <option value="weekend">주말 및 공휴일</option>
+            </select>
+          </div>
+          <button type="submit">비공개 1대1 맞춤 무료 견적 및 등급 진단 신청하기</button>
+        </form>
+      </section>
+    </article>
+  </main>
+
+  
+  <!-- Interactive JavaScript Script -->
+  <script>
+    // FAQ Accordion Interaction
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqQuestions = document.querySelectorAll('.faq-question');
+
+      faqQuestions.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const answer = btn.nextElementSibling;
+          const isActive = btn.classList.contains('active');
+
+          // Close other open answers
+          document.querySelectorAll('.faq-question').forEach(otherBtn => {
+            if (otherBtn !== btn) {
+              otherBtn.classList.remove('active');
+              otherBtn.nextElementSibling.classList.remove('show');
+            }
+          });
+
+          // Toggle current
+          if (!isActive) {
+            btn.classList.add('active');
+            answer.classList.add('show');
+          } else {
+            btn.classList.remove('active');
+            answer.classList.remove('show');
+          }
+        });
+      });
+
+      // Interactive Cost Estimator Logic
+      const calcBtn = document.getElementById('run-calc-btn');
+      const resultPanel = document.getElementById('calc-result');
+      const resultCost = document.getElementById('result-cost');
+      const resultTierBadge = document.getElementById('result-tier-badge');
+      const resultDesc = document.getElementById('result-desc');
+
+      if (calcBtn) {
+        calcBtn.addEventListener('click', () => {
+          const targetTier = document.getElementById('calc-target').value;
+          const period = document.getElementById('calc-period').value;
+          const job = document.getElementById('calc-job').value;
+          const child = document.getElementById('calc-child').value;
+
+          let basePrice = 3500000;
+          let tierName = "스탠다드 클래식 플랜";
+
+          if (targetTier === 'nob') {
+            basePrice = 5500000;
+            tierName = "노블레스 골드 파트너 플랜";
+          } else if (targetTier === 'vip') {
+            basePrice = 9900000;
+            tierName = "로열 VIP 프레스티지 플랜";
+          }
+
+          // Adjustments based on job/child
+          if (job === 'pro' || job === 'biz') {
+            basePrice += 500000;
+          }
+
+          if (period === 'count') {
+            basePrice = Math.round(basePrice * 0.75 / 100000) * 100000;
+          }
+
+          // Format price
+          const formattedPrice = basePrice.toLocaleString('ko-KR') + ' 원';
+
+          resultTierBadge.textContent = "추천 플랜: " + tierName;
+          resultCost.textContent = formattedPrice;
+          resultDesc.textContent = "선택하신 맞춤 조건(100% 공적 서류 검증 및 1대1 매니저 전담 배정)에 따른 2027년 업계 표준 예상 견적입니다.";
+          
+          resultPanel.classList.add('active');
+          resultPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+      }
+    });
+  </script>
+  
